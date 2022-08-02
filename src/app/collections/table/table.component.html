@@ -1,0 +1,14 @@
+<table class="ui table">
+  <thead>
+    <tr>
+      <th *ngFor="let header of headers">{{ header.label }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let da of data">
+      <td>{{da.name}}</td>
+      <td>{{da.age}}</td>
+      <td>{{da.job}}</td>
+    </tr>
+  </tbody>
+</table>
