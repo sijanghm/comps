@@ -1,3 +1,9 @@
 <app-divider>Modal Component</app-divider>
 <button (click)="onButtonClick()">Show Modal</button>
-<app-modal (close)="onButtonClick()" *ngIf="click"></app-modal>
+<app-modal (close)="onButtonClick()" *ngIf="click">
+  <div modelTitle>I am reuseable Title</div>
+  <p>I am a reuseable model</p>
+  <ng-container modelFooter>
+    <button class="ui button" (click)="onButtonClick()">Close Me!!</button>
+  </ng-container>
+</app-modal>
