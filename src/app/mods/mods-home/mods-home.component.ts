@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModsHomeComponent implements OnInit {
 
+  click :  boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onButtonClick(){
+    this.click = !this.click;
   }
 
 }
