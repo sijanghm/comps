@@ -8,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class ModsHomeComponent implements OnInit {
 
   click :  boolean = false;
+  items = [
+    {title:'What is your name?', content: 'I am Sijan Ghimire'},
+    {title:'Where do you live?', content: 'I live in kathmandu'},
+    {title:'How old are you?', content: 'I am 22 years old'}
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
